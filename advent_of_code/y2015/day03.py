@@ -86,7 +86,7 @@ def part_two() -> int:
                         coordinates[santas_new_coordinate] = 1   
                     santas_current_coordinates = santas_new_coordinate
 
-                elif char == '<':
+                elif char == '>':
                     santas_new_coordinate = Coordinate(x=santas_current_coordinates.x + 1, y=santas_current_coordinates.y)
                     if santas_new_coordinate in coordinates:
                         coordinates[santas_new_coordinate] += 1
@@ -119,7 +119,7 @@ def part_two() -> int:
                         coordinates[robosantas_new_coordinate] = 1   
                     robosantas_current_coordinates = robosantas_new_coordinate
 
-                elif char == '<':
+                elif char == '>':
                     robosantas_new_coordinate = Coordinate(x=robosantas_current_coordinates.x + 1, y=robosantas_current_coordinates.y)
                     if robosantas_new_coordinate in coordinates:
                         coordinates[robosantas_new_coordinate] += 1
