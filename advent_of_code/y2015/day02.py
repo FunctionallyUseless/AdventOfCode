@@ -21,7 +21,7 @@ class Box:
         bow = self.w * self.h * self.l
         a, b, _ = sorted([self.w, self.h, self.l])
         wrap = a * 2 + b * 2
-        self.ribbon = bow + wrap
+        self.ribbon_length = bow + wrap
 
 
 def parse_line(line: str) -> Box:
