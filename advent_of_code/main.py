@@ -1,4 +1,4 @@
-from y2015.day01 import part_two
+from y2015 import day01, day02
 
 if __name__ == '__main__':
-    print(part_two())
+    print(day02.part_two())
